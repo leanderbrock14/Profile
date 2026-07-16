@@ -1,7 +1,6 @@
 /*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme
  * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
 /* Global Styles */
@@ -13,7 +12,9 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
 }
 
 .text-vertical-center {
@@ -29,38 +30,59 @@ body {
     font-weight: 700;
 }
 
+p {
+    line-height: 1.7;
+}
+
+a {
+    color: #1f5f8b;
+}
+
+a:hover,
+a:focus {
+    color: #133c59;
+    text-decoration: none;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Custom Horizontal Rule */
+/* Horizontal Rule */
 
 hr.small {
     max-width: 100px;
+}
+
+.section-divider {
+    width: 80px;
+    border: 0;
+    border-top: 2px solid #d9d9d9;
+    margin: 30px auto;
 }
 
 /* Side Menu */
@@ -74,10 +96,6 @@ hr.small {
     margin-right: -250px;
     overflow-y: auto;
     background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 
@@ -102,9 +120,8 @@ hr.small {
 }
 
 .sidebar-nav li a:hover {
-    text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-nav li a:active,
@@ -128,7 +145,7 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 1001;
     position: fixed;
     top: 0;
     right: 0;
@@ -137,11 +154,6 @@ hr.small {
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
 }
 
 .toggle {
@@ -155,47 +167,38 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
+    color: #fff;
     background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+}
+
+.header .btn {
+    margin-top: 15px;
 }
 
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 60px 0;
+    background-color: #f7f7f7;
 }
 
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 60px 0;
+    background-color: #eaf2f8;
 }
 
 .service-item {
     margin-bottom: 30px;
 }
 
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 60px 0;
+    background-color: #ffffff;
 }
 
 .portfolio-item {
@@ -213,7 +216,8 @@ hr.small {
 /* Call to Action */
 
 .call-to-action {
-    padding: 50px 0;
+    padding: 60px 0;
+    background-color: #e6efe6;
 }
 
 .call-to-action .btn {
@@ -226,13 +230,18 @@ hr.small {
     height: 500px;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .map {
         height: 75%;
     }
+
+    .text-vertical-center h1 {
+        font-size: 3em;
+    }
 }
 
-/*disable custom maps scrolling behaviour*/
+/* Disable custom maps scrolling behaviour */
+
 .scrolloff {
     pointer-events: none;
 }
@@ -240,38 +249,6 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
-}
-
-.section-divider {
-  width: 80px;
-  border-top: 2px solid #d9d9d9;
-  margin: 40px auto 30px auto;
-}
-
-/* Section colors */
-
-.about {
-    padding: 50px 0;
-    background-color: #1f84c7;
-}
-
-.services {
-    padding: 50px 0;
-    background-color: #eaf2f8;
-}
-
-.portfolio {
-    padding: 50px 0;
-    background-color: #492b03;
-}
-
-.call-to-action {
-    padding: 50px 0;
-    background-color: #e6efe6;
-}
-
-footer {
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: #f7f7f7;
 }
