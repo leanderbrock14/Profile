@@ -242,3 +242,9 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.section-divider {
+  width: 80px;
+  border-top: 2px solid #d9d9d9;
+  margin: 40px auto 30px auto;
+}
