@@ -252,3 +252,13 @@ footer {
     padding: 80px 0;
     background-color: #f7f7f7;
 }
+
+.portfolio .btn {
+    position: relative;
+    z-index: 10;
+}
+
+.about img {
+    margin: 20px auto;
+    display: block;
+}
