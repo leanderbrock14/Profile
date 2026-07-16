@@ -1,19 +1,18 @@
 # Site settings
-title:Logan Brock
-email:LLBrock@uncg.edu
-description: > # this means to ignore newlines until "baseurl:"
-  A portfolio site created by a Graduate student studying Library and Information Science.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Logan Brock
+email: LLBrock@uncg.edu
+description: >
+  Logan Brock: Academic Librarian Website.
+  A portfolio site created by a graduate student studying Library and Information Science.
+baseurl: ""
+url: ""
 
 # User setting
-owner:Logan Brock
-email:LLBrock@uncg.edu
-github_username:
+owner: Logan Brock
+github_username: leanderbrock14
 address:
   - line:
   - line:
-  # Feel free to add more lines here 
 telephone:
 copyright:
 
